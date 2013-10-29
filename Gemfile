@@ -12,6 +12,7 @@ group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
   gem 'pry-rails'
+  gem 'guard-rspec', '2.5.0'
 end
 
 group :development do
@@ -25,6 +26,7 @@ group :test do
   gem 'capybara', '2.1.0'
   gem 'factory_girl_rails'
   gem 'launchy'
+  gem 'growl', '1.0.3'
 end
 
 # Use SCSS for stylesheets
