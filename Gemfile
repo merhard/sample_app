@@ -4,12 +4,13 @@ ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
+gem 'pg', '0.17.0'
+
 gem "haml-rails", "~> 0.4"
 
 gem 'simple_form'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
   gem 'pry-rails'
   gem 'guard-rspec', '2.5.0'
@@ -59,7 +60,6 @@ group :doc do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
 
