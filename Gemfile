@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby File.read('.ruby-version').chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
@@ -15,6 +15,7 @@ gem 'bootstrap-sass', '2.3.2.0'
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
   gem 'pry-rails'
+  gem 'pry-plus'
   gem 'guard-rspec', '2.5.0'
   gem 'spork-rails', '4.0.0'
   gem 'guard-spork', '1.5.0'
@@ -33,6 +34,7 @@ group :test do
   gem 'factory_girl_rails'
   gem 'launchy'
   gem 'growl', '1.0.3'
+  gem "simplecov", "0.7.1", require: false
 end
 
 # Use SCSS for stylesheets
